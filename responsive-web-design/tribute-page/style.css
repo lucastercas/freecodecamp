@@ -1,0 +1,48 @@
+body {
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div {
+  display: block;
+}
+
+main {
+  margin: 30px auto;
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+}
+
+img {
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  text-align: left;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+#img-div {
+  margin: -5px;
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border: 5px solid white;
+}
+
+#tribute-info {
+  color: #333;
+}
+
+#headline {
+  margin-top: 50px;
+  text-align: left;
+}
