@@ -6,17 +6,24 @@ class Markdown extends React.Component {
     this.state = {
       markdown: `# H1 Header
 ## H2 Header
+
 [google](https://www.google.com)
+
 Inline \`Javascript\` code
+
 \`\`\`
-Block 1Javascript code
+Block Javascript code
 \`\`\`
 1. List
 2. Item
 > Block Quote
+
 ![Image](https://www.google.com "Google Logo")
+
 **This text Should be bold**
-__ This text should be in italyc__`,
+
+_This text should be in italyc_
+`,
     };
     this.updateText = this.updateText.bind(this);
     this.handleMarkdown = this.handleMarkdown.bind(this);
@@ -86,7 +93,7 @@ class MarkdownPreviewer extends React.Component {
       },
       e('div', { className: 'toolbar' }, 'Preview'),
       e('div', {
-        id: 'previewer',
+        id: 'preview',
         dangerouslySetInnerHTML: { __html: this.props.text },
       })
     );
