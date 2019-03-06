@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Welcome to my Free Code Camp Course
 
-You can use the [editor on GitHub](https://github.com/lucastercas/freecodecamp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In this repository, I keep all the projects I am doing in fcc. Summary of the
+projects:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Responsive Web Design
+2. Javascript Algorithms
+3. Front End Libraries
 
-### Markdown
+## Responsive Web Design
+1. [Tribute Page](./responsive-web-design/tribute-page/index.html)
+2. [Survey Form](./responsive-web-design/survey-form)
+3. [Product Landing Page]()
+4. [Technical Documentation Page]()
+5. [Personal Portifolio]()
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Javascript Algorithms
+1. [Palindrome Checker]()
+2. [Roman Numeral Converter]()
+3. [Caesars Cipher]()
+4. [Telephone Number Validator]()
+5. [Cash Register]()
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lucastercas/freecodecamp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Front End Libraries
+1. [Random Quote Machine](./front-end-libraries/quote-machine/index.html)
+2. [Markdown Previewer](./front-end-libraries/markdown-previewer/index.html)
+3. [Drum Machine](./front-end-libraries/drum-machine/index.html)
+4. [JavaScript Calculator]()
+5. [Pomodoro Clock]()
