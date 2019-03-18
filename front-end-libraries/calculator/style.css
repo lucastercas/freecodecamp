@@ -1,0 +1,64 @@
+body {
+  background-color: #282828;
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#calculator {
+  background-color: black;
+  border: 2px solid red;
+  position: relative;
+}
+
+#display {
+  border: 2px solid orange;
+  height: 50px;
+  text-align: right;
+}
+
+#keys {
+  height: 308px;
+  width: 248px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.key {
+  background-color: gray;
+  cursor: pointer;
+  margin: 1px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+
+.key:hover {
+  outline: 1px solid white;
+}
+
+#key-equal {
+  width: 122px;
+  background-color: blue;
+}
+
+#key-ac {
+  width: 122px;
+  background-color: red;
+}
+
+#key-dot {
+}
+
+#key-zero {
+  width: 122px;
+}
