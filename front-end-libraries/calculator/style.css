@@ -1,6 +1,6 @@
 body {
-  background-color: #282828;
-  color: white;
+  background-color: #1d2021;
+  color: #ebdbb2;
 }
 
 main {
@@ -11,15 +11,14 @@ main {
 }
 
 #calculator {
-  background-color: black;
-  border: 2px solid red;
+  background-color: #282828;
+  border: 2px solid #d65d0e;
   position: relative;
 }
-
 #display {
-  border: 2px solid orange;
   height: 50px;
   text-align: right;
+  font-size: 20px;
 }
 
 #keys {
@@ -33,7 +32,7 @@ main {
 }
 
 .key {
-  background-color: gray;
+  background-color: #928374;
   cursor: pointer;
   margin: 1px;
   width: 60px;
@@ -43,17 +42,17 @@ main {
 }
 
 .key:hover {
-  outline: 1px solid white;
+  outline: 1px solid #ebdbb2;
 }
 
 #key-equal {
   width: 122px;
-  background-color: blue;
+  background-color: #458588;
 }
 
 #key-ac {
   width: 122px;
-  background-color: red;
+  background-color: #cc241d;
 }
 
 #key-dot {
