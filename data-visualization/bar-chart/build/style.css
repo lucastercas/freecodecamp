@@ -1,0 +1,19 @@
+body {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+main {
+  text-align: center;
+}
+
+#chart {
+  background-color: #1d2021;
+}
+
+.bar {
+  fill: #928374;
+}
+
+.bar:hover {
+  fill: #cc241d;
+}

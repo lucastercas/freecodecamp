@@ -9,23 +9,33 @@ class PomodoroClock extends React.Component {
       minute: 25,
       second: 0,
     };
-    this.countSeconds();
+    this.stoped = true;
   }
 
   increaseControlLength(control) {
-    let obj = {};
-    obj[control] = this.state[control] + 1;
-    this.setState(obj);
+    if (this.stoped) {
+      console.log('Increasing ', control);
+      let obj = {};
+      obj[control] = this.state[control] + 1;
+      this.setState(obj);
+    }
   }
 
   decreaseControlLength(control) {
-    let obj = {};
-    obj[control] = this.state[control] - 1;
-    this.setState(obj);
+    if (this.stoped) {
+      let obj = {};
+      obj[control] = this.state[control] - 1;
+      this.setState(obj);
+    }
   }
 
-  countSeconds() {
-    setInterval(() => {
+  timer(callback) {
+    this.intervalId = setInterval(callback, 1000);
+  }
+
+  start() {
+    this.stoped = false;
+    const callback = () => {
       if (this.state.second === 0) {
         this.setState({
           second: 59,
@@ -36,7 +46,26 @@ class PomodoroClock extends React.Component {
           second: this.state.second - 1,
         });
       }
-    }, 1000);
+    };
+    this.timer(callback);
+  }
+
+  stop() {
+    this.stoped = true;
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+  restart() {
+    this.stoped = true;
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+    this.setState({
+      minute: this.state.session,
+      second: 0,
+    });
   }
 
   render() {
@@ -57,9 +86,9 @@ class PomodoroClock extends React.Component {
         decrease: () => this.decreaseControlLength('session'),
       }),
       e(Clock, { minute: this.state.minute, second: this.state.second }),
-      e(Button, { text: 'Start' }),
-      e(Button, { text: 'Stop' }),
-      e(Button, { text: 'Restart' })
+      e(Button, { text: 'Start', click: () => this.start() }),
+      e(Button, { text: 'Stop', click: () => this.stop() }),
+      e(Button, { text: 'Restart', click: () => this.restart() })
     );
   }
 }
@@ -115,7 +144,13 @@ class Clock extends React.Component {
         'h2',
         {},
         'Session',
-        e('div', {}, this.props.minute, ':', this.props.second)
+        e(
+          'div',
+          {},
+          this.props.minute,
+          ':',
+          this.props.second <= 9 ? `0${this.props.second}` : this.props.second
+        )
       )
     );
   }
