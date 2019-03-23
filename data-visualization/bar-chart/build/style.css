@@ -8,6 +8,7 @@ main {
 
 #chart {
   background-color: #1d2021;
+  box-shadow: 2px 2px 20px #ebdbb2;
 }
 
 .bar {
@@ -16,4 +17,14 @@ main {
 
 .bar:hover {
   fill: #cc241d;
+}
+
+.tooltip {
+  color: #282828;
+  font-size: 15px;
+  padding: 5px;
+  background-color: #ebdbb2;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 10px;
 }
