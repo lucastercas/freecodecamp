@@ -1,0 +1,3 @@
+[submodule "web-data-visualization"]
+	path = web-data-visualization
+	url = https://github.com/lucastercas/web-data-visualization
