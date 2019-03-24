@@ -1,5 +1,5 @@
 body {
-  background-color: #282828;
+  background-color: #1d2021;
   color: #ebdbb2;
 }
 main {
@@ -7,8 +7,9 @@ main {
 }
 
 #chart {
-  background-color: #1d2021;
+  background-color: #282828;
   box-shadow: 2px 2px 20px #ebdbb2;
+  border: 1px solid #ebdbb2;
 }
 
 .bar {
